@@ -10,8 +10,8 @@ module.exports = {
         sans: ['Inter', 'sans-serif'], // Adding Inter as the default sans-serif font
       },
       colors: {
-        'custom-blue': '#477be4',
-      }
+      'custom-blue': '#477be4',
+    }
     },
   },
   plugins: [],

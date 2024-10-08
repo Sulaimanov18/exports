@@ -38,13 +38,14 @@ const ExpertListingPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-200 min-h-screen">
+    <div className="flex flex-col items-center p-6 min-h-screen " style={{ backgroundColor: '#F3F4F6' }}> {/* Background color changed to light gray */}
       <Title level={2} className="mb-4 text-center text-blue-600">Find a Therapist</Title>
       <Input
         placeholder="Search by name or profession"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="mb-6 w-full max-w-md border border-blue-500"
+        className="mb-6 w-full max-w-md"
+        style={{ borderColor: 'transparent' }} // Removing the border from the Input
       />
       <div className="flex flex-col items-center w-full">
         {currentExperts.map((expert, index) => (
@@ -54,10 +55,20 @@ const ExpertListingPage: React.FC = () => {
         ))}
       </div>
       <div className="flex justify-center w-full max-w-md mt-6">
-        <Button onClick={handlePrevPage} disabled={currentPage === 1} className="mx-2 text-lg" style={{ width: '150px', backgroundColor: '#3B82F6', color: 'white' }}>
+        <Button 
+          onClick={handlePrevPage} 
+          disabled={currentPage === 1} 
+          className="mx-2 text-lg" 
+          style={{ width: '150px', backgroundColor: '#3B82F6', color: 'white' }}
+        >
           Previous
         </Button>
-        <Button onClick={handleNextPage} disabled={currentPage === totalPages} className="mx-2 text-lg" style={{ width: '150px', backgroundColor: '#3B82F6', color: 'white' }}>
+        <Button 
+          onClick={handleNextPage} 
+          disabled={currentPage === totalPages} 
+          className="mx-2 text-lg" 
+          style={{ width: '150px', backgroundColor: '#3B82F6', color: 'white' }}
+        >
           Next
         </Button>
       </div>

@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
 
 .text-custom-blue {
   color: #477be4 !important;
+}
+/* Optional: Adjust transition timing for a better effect */
+.transition-transform {
+  transition: transform 0.5s ease-in-out;
 }
