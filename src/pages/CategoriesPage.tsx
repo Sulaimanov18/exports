@@ -6,7 +6,7 @@ const categories = ['Psychologists', 'Life Coaches', 'Career Mentors', 'Business
 const CategoriesPage: React.FC = () => {
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Browse by Category</h1>
+      <div className="text-3xl font-bold text-center mb-6 font-sans">Browse by Category</div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {categories.map((category, index) => (
           <Link
