@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./index.html",
@@ -15,7 +16,8 @@ module.exports = {
       'green' : '#59C65B',
       'blaa' : '#2B2B2B',
 
-    }
+    },
+    
     },
   },
   plugins: [],
