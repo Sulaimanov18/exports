@@ -81,7 +81,7 @@ const HomePage: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto bg-light-gray font-custom"> {/* Applied custom font to the entire HomePage */}
+    <div className="container mx-auto p-3 bg-light-gray font-custom"> {/* Applied custom font to the entire HomePage */}
       {showPopup && (
         <div
           className={`fixed inset-0 flex items-end justify-center bg-cover bg-center bg-no-repeat bg-[url('src/picture/screen.jpg')] z-50 transition-all duration-700 ease-in-out transform ${isClosing ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}`}
@@ -101,11 +101,11 @@ const HomePage: React.FC = () => {
           ))}
         </div>
 
-        <div className="absolute bottom-4 right-4 p-3 flex flex-col items-center space-y-2">
+        <div className="absolute bottom-4 right-4 p-2 flex flex-col items-center space-y-2">
           {phrases[currentPhraseIndex].icon}
         </div>
       </div>
-      <div className="w-full  p-3">
+      <div className="w-full p-2">
         <ExpertShowcase />
       </div>
       {/* Statistics Section */}
