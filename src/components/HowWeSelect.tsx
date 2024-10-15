@@ -24,8 +24,7 @@ const HowWeSelectExperts: React.FC<HowWeSelectExpertsProps> = ({ steps, expertIm
     <div className="therapist__content bg-gray-200 w-full py-12">
       {/* Section Title */}
       <h1 className="therapist__title text-3xl font-bold text-center mb-8">
-        How We Choose Experts
-      </h1>
+      Как мы выбираем экспертов      </h1>
 
       {/* Expert Images */}
       <div className="therapist__images flex justify-center mb-8 space-x-4">
@@ -68,8 +67,8 @@ const HowWeSelectExperts: React.FC<HowWeSelectExpertsProps> = ({ steps, expertIm
           className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg"
           onClick={handleExploreClick} // Add the onClick event to navigate
         >
-          Start Exploring
-        </Button>
+Начать изучение        
+</Button>
       </div>
     </div>
   );

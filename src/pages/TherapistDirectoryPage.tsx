@@ -3,7 +3,6 @@ import { Layout, Row, Col, Typography } from 'antd';
 // import TherapistCard from '../components/';
 import SearchBar from '../components/SearchBar';
 import experts from '../expertsData';
-import TherapistHeader from '../components/Header';
 
 const { Title } = Typography;
 
@@ -21,7 +20,6 @@ const TherapistDirectoryPage: React.FC = () => {
 
   return (
     <Layout>
-      <TherapistHeader />
       <Layout.Content style={{ padding: '24px' }}>
         <Title level={3}>Find a Therapist</Title>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />

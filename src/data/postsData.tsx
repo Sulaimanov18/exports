@@ -1,41 +1,69 @@
 export type Post = {
   id: number;
   title: string;
-  content: string; // Main content of the post
-  additionalText: string; // Additional text for each post
-  icon: 'HeartOutlined' | 'BulbOutlined' | 'RiseOutlined' | 'MoneyCollectOutlined'; // Restrict icon values
-  imageUrl?: string; // Optional image URL
+  content: string; // Основное содержание поста
+  additionalText: string; // Дополнительный текст для каждого поста
+  icon: 'HeartOutlined' | 'BulbOutlined' | 'RiseOutlined' | 'MoneyCollectOutlined'; // Ограничение значений иконок
+  imageUrl?: string; // Необязательная ссылка на изображение
 };
 
 const posts: Post[] = [
   {
     id: 1,
-    title: "Understanding Mental Health",
-    content: "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.",
-    additionalText: "Mental health is crucial for overall well-being. It impacts your ability to lead a fulfilling life, manage stress, and relate to others.",
+    title: "Понимание психического здоровья",
+    content: "Психическое здоровье включает наше эмоциональное, психологическое и социальное благополучие. Оно влияет на то, как мы думаем, чувствуем и ведём себя.",
+    additionalText: "Психическое здоровье является ключевым для общего благополучия. Оно влияет на вашу способность вести полноценную жизнь, управлять стрессом и взаимодействовать с другими.",
     icon: "HeartOutlined",
-    imageUrl : "https://images.unsplash.com/photo-1517252563420-14c504b16527",
+    imageUrl: "https://images.unsplash.com/photo-1517252563420-14c504b16527",
   },
   {
     id: 2,
-    title: "Coping with Stress",
-    content: "Understanding stress and learning effective coping strategies can improve mental health and overall well-being.",
-    additionalText: "Stress is a natural response to challenges in life. However, chronic stress can have serious health consequences.",
+    title: "Справляться со стрессом",
+    content: "Понимание стресса и изучение эффективных стратегий борьбы с ним может улучшить психическое здоровье и общее благополучие.",
+    additionalText: "Стресс — это естественная реакция на жизненные вызовы. Однако хронический стресс может иметь серьёзные последствия для здоровья.",
     icon: "BulbOutlined",
   },
   {
     id: 3,
-    title: "The Benefits of Life Coaching",
-    content: "Life coaching can provide the tools and support necessary to achieve personal and professional goals.",
-    additionalText: "A life coach helps individuals identify their goals and create a plan to achieve them.",
+    title: "Преимущества лайф-коучинга",
+    content: "Лайф-коучинг может предоставить инструменты и поддержку, необходимые для достижения личных и профессиональных целей.",
+    additionalText: "Лайф-коуч помогает людям определить их цели и разработать план для их достижения.",
     icon: "RiseOutlined",
   },
   {
     id: 4,
-    title: "Managing Your Finances",
-    content: "Financial advisors can provide insights into budgeting, investing, and planning for the future.",
-    additionalText: "Managing finances effectively is essential for achieving financial security and peace of mind.",
+    title: "Управление финансами",
+    content: "Финансовые консультанты могут предоставить полезную информацию о бюджетировании, инвестициях и планировании на будущее.",
+    additionalText: "Эффективное управление финансами необходимо для достижения финансовой безопасности и спокойствия.",
     icon: "MoneyCollectOutlined",
+  },
+];
+
+
+const steps = [
+  {
+    title: 'Образование',
+    description: 'Мы проверяем дипломы: высшее психологическое, медицинское (психиатрия) или переподготовка',
+  },
+  {
+    title: 'Опыт работы',
+    description: 'Мы принимаем специалистов с подтвержденной практикой от трёх лет',
+  },
+  {
+    title: 'Рекомендации',
+    description: 'Мы запрашиваем рекомендацию от руководителя, старших коллег или психологической ассоциации',
+  },
+  {
+    title: 'Собеседование',
+    description: 'Мы анализируем успешные кейсы и проверяем навыки на входном интервью',
+  },
+  {
+    title: 'Этический кодекс',
+    description: 'Мы проверяем, разделяет ли кандидат наши ценности. Профессиональный психолог не осуждает и не критикует',
+  },
+  {
+    title: 'Обучение',
+    description: 'Мы развиваем психологов через семинары и супервизию. Даже профессионалы нуждаются в обучении',
   },
 ];
 

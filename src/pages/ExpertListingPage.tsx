@@ -39,7 +39,7 @@ const ExpertListingPage: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center p-6 min-h-screen " style={{ backgroundColor: '#F3F4F6' }}> {/* Background color changed to light gray */}
-      <Title level={2} className="mb-4 text-center text-blue-600">Find a Therapist</Title>
+      <Title level={2} className="mb-4 text-center text-blue-600">Найти эксперта</Title>
       <Input
         placeholder="Search by name or profession"
         value={searchTerm}

@@ -5,15 +5,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-      "clean": "rm -rf dist && rm -rf build && rm -rf node_modules",
-      "dev": "vite",
-      "build": "vite build",
-      "serve": "vite preview"
-    },
+    "clean": "rm -rf dist && rm -rf build && rm -rf node_modules",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
   "dependencies": {
     "antd": "^5.21.2",
+    "i18next": "^23.16.0",
+    "i18next-browser-languagedetector": "^8.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.3",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2"
   },

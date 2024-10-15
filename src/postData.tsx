@@ -1,17 +1,16 @@
 const posts = [
-    {
-      id: 1,
-      title: 'Fitness Coaching',
-      content: 'Details about fitness coaching...',
-      additionalText: 'Some additional info...',
-      icon: 'HeartOutlined', // or another icon type
-    },
-    {
-      id: 2,
-      title: 'Relationship Counseling',
-      content: 'Details about relationship counseling...',
-      additionalText: 'Some additional info...',
-      icon: 'BulbOutlined', // or another icon type
-    },
-  ];
-  
+  {
+    id: 1,
+    title: 'Фитнес-тренировки',
+    content: 'Детали о фитнес-тренировках...',
+    additionalText: 'Дополнительная информация...',
+    icon: 'HeartOutlined', // или другой тип иконки
+  },
+  {
+    id: 2,
+    title: 'Консультирование по отношениям',
+    content: 'Детали о консультировании по вопросам отношений...',
+    additionalText: 'Дополнительная информация...',
+    icon: 'BulbOutlined', // или другой тип иконки
+  },
+];
